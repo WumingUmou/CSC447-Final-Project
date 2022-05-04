@@ -41,6 +41,7 @@ The result will be saved to `output file`
 ## Requirements
     GPU with CUDA installed
     CUDA = ...
+    Will update in a moment
 
 # Results
 The model gave a `0.83` percision in the full test set, trained on the full train set after 8 epoches.
