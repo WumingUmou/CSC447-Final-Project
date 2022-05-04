@@ -40,8 +40,18 @@ The result will be saved to `output file`
 
 ## Requirements
     GPU with CUDA installed
-    CUDA = ...
-    Will update in a moment
+    CUDA = 11.3
+    python = 3.9
+    pytorch = 1.11.0 with gpu
+    pandas = 1.4.2
+    numpy = 1.21.5
+    tqdm = 4.64.0
+    transformers = 4.18.0
+    scikit-learn = 1.0.2
+    seaborn = 0.11.2
+    matplotlib = 3.5.1
+    pytorch_lightning = 1.6.2
+    re = 2.2.1
 
 # Results
 The model gave a `0.83` percision in the full test set, trained on the full train set after 8 epoches.
