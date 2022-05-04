@@ -38,7 +38,7 @@ I also made a random sample of 2k data points as prediction set `test.csv`
 
 The result will be saved to `output file`
 
-## Requirements
+## Environment Requirements
     GPU with CUDA installed
     CUDA = 11.3
     python = 3.9
