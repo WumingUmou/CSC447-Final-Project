@@ -16,8 +16,31 @@ The dataset include:
 | hashtags | the hashtags for this twitter  | 
 | retweet_count | how many retweets did this twitter get |
 |year| the year this twitter got published |
-|party_id| the political party of this twitter's sender |
+|party_id **(target)**| the political party of this twitter's sender |
 
 There are 58k+ rows of data in the full training dataset. For the ease of uploading to github, I made a random sample of 10k and 50k data points, saved as `demo_10000.csv` and `demo_50000.csv` respectivly.
 
+I also made a random sample of 2k data points as prediction set `test.csv`
 
+# Using the model
+
+`python3 bert_Twitter.py [input file] [output file] [N_EPOCH] [BATCH_SIZE] [MAX_TOKEN_LEN]`
+
+||||
+| ------ | ------ | ------ |
+|`input file`|`string`| for demo, choose from `demo_10000.csv` or `demo_50000.csv`|
+|`output file`|`string`| for demo, choose `test.csv`|
+|`N_EPOCH`| `int`| the total number of epoches that the model will run|
+|`BATCH_SIZE`|`int`| the size of each batch, choose by RAM usage|
+|`MAX_TOKEN_LEN`| `int` | the max length of a tokenized vector|
+
+The result will be saved to `output file`
+
+## Requirements
+    GPU with CUDA installed
+    CUDA = ...
+
+# Results
+The model gave a `0.83` percision in the full test set, trained on the full train set after 8 epoches.
+
+However, on the `demo_10000.csv`, the BCELoss raised to `0.9` on the validation set and `0.03` on the training set after the 5th epoch due to extreame overfitting problem where the size of data for training is too small for the model.
