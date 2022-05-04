@@ -47,3 +47,6 @@ The result will be saved to `output file`
 The model gave a `0.83` percision in the full test set, trained on the full train set after 8 epoches.
 
 However, on the `demo_10000.csv`, the BCELoss raised to `0.9` on the validation set and `0.03` on the training set after the 5th epoch due to extreame overfitting problem where the size of data for training is too small for the model.
+
+# reference
+https://github.com/codertimo/BERT-pytorch
