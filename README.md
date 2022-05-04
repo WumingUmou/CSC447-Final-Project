@@ -4,8 +4,9 @@
 # Introduction
     This project is a implementation of Google's BERT model onto a Kaggle compitation dataset.
     The dataset include 
-    |c|c|
-    |---|---|
+
+    |column name|description|
+    | --- | --------- |
     |index| |
     |favorite_count||
     |full_text||
