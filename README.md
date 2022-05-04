@@ -4,6 +4,8 @@
 # Introduction
 This project is a implementation of Google's BERT model onto a Kaggle compitation dataset.
 
+Link to the Kaggle compitation:
+https://www.kaggle.com/competitions/congressionaltweetcompetitionspring2022/overview
 ## Compitation
 The goal of this compitation is using some general information of a twitter to predict if the sender's political party is Democratic or Republican.
 
